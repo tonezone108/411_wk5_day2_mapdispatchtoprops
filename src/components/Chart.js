@@ -3,10 +3,10 @@ import PieChart from "react-minimal-pie-chart";
 
 const Chart = props => {
   const over = props.cars.filter(car => {
-    return car > 200;
+    return car.horsepower > 200;
   });
   const under = props.cars.filter(car => {
-    return car < 200;
+    return car.horsepower < 200;
   });
 
   console.log("over " + over.length, "under " + under.length);
